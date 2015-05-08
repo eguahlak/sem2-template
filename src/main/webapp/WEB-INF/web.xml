@@ -6,6 +6,22 @@
         </session-timeout>
     </session-config>
     <listener>
-        <listener-class>dk.cphbusiness.template.application.Setup</listener-class>
+        <listener-class>template.application.Setup</listener-class>
     </listener>
+    <context-param>
+        <param-name>USERNAME</param-name>
+        <param-value>aka</param-value>
+    </context-param>
+    <context-param>
+        <param-name>PASSWORD</param-name>
+        <param-value>aka</param-value>
+    </context-param>
+    <context-param>
+        <param-name>DRIVER</param-name>
+        <param-value>oracle.jdbc.driver.OracleDriver</param-value>
+    </context-param>
+    <context-param>
+        <param-name>DB-URL</param-name>
+        <param-value>jdbc:oracle:thin:@datdb.cphbusiness.dk:1521:DAT</param-value>
+    </context-param>
 </web-app>
