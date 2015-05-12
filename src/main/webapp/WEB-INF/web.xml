@@ -6,7 +6,7 @@
         </session-timeout>
     </session-config>
     <listener>
-        <listener-class>template.application.Setup</listener-class>
+        <listener-class>application.Setup</listener-class>
     </listener>
     <context-param>
         <param-name>USERNAME</param-name>
