@@ -4,8 +4,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 public abstract class BaseMenu implements Menu {
+  protected static Menu MAIN;
+  protected static Menu LIST;
+  protected static Menu EDIT;
   private final Map<String, String> strings = new HashMap<>();
   private final Map<String, Integer> integers = new HashMap<>();
+  
+  public BaseMenu() {
+    // MAIN = new 
+    }
   
   @Override
   public String getString(String key) {

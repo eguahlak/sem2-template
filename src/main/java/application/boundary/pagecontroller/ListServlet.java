@@ -1,4 +1,4 @@
-package application.boundary.web;
+package application.boundary.pagecontroller;
 
 import application.control.Controller;
 import application.control.PersonSummary;
@@ -7,7 +7,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 
 @WebServlet(name = "ListServlet", urlPatterns = {"/List"})
-public class ListPageController extends PageController {
+public class ListServlet extends BaseServlet {
 
   @Override
   protected String service(

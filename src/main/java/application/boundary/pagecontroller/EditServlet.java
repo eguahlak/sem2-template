@@ -1,4 +1,4 @@
-package application.boundary.web;
+package application.boundary.pagecontroller;
 
 import application.control.Controller;
 import application.control.PersonDetail;
@@ -7,7 +7,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 
 @WebServlet(name = "EditServlet", urlPatterns = {"/Edit"})
-public class EditPageController extends PageController {
+public class EditServlet extends BaseServlet {
 
   @Override
   protected String service(HttpServletRequest request, Controller controller) {

@@ -1,11 +1,11 @@
-package application.boundary.web;
+package application.boundary.pagecontroller;
 
 import application.control.Controller;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 
 @WebServlet(name = "MainServlet", urlPatterns = {"/Main"})
-public class MainPageController extends PageController {
+public class MainServlet extends BaseServlet {
 
   @Override
   protected String service(

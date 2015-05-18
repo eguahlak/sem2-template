@@ -1,4 +1,4 @@
-package application.boundary.web;
+package application.boundary.pagecontroller;
 
 import application.control.Controller;
 import application.control.PersonDetail;
@@ -8,7 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 
 @WebServlet(name = "SaveServlet", urlPatterns = {"/Save"})
-public class SavePageController extends PageController {
+public class SaveServlet extends BaseServlet {
 
   @Override
   protected String service(

@@ -1,4 +1,4 @@
-package application.boundary.web;
+package application.boundary.pagecontroller;
 
 import application.control.Controller;
 import application.control.simple.SimpleController;
@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-public abstract class PageController extends HttpServlet {
+public abstract class BaseServlet extends HttpServlet {
 
   @Override
   protected void service(HttpServletRequest request, HttpServletResponse response) throws IOException {

@@ -1,6 +1,5 @@
-package application.boundary.web;
+package application.boundary.pagecontroller;
 
-import application.boundary.web.EditPageController;
 import application.control.Controller;
 import application.control.PersonDetail;
 import javax.servlet.http.HttpServletRequest;
@@ -12,7 +11,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 
-public class EditPageControllerTest {
+public class EditServletTest {
   public final Mockery context = new JUnitRuleMockery();
   
   @Test
@@ -21,7 +20,7 @@ public class EditPageControllerTest {
     final Controller controller = context.mock(Controller.class);
     final PersonDetail person = new PersonDetail(7, "Kurt", "Hansen", "kurt@hansen.dk", 34);
     
-    EditPageController servlet = new EditPageController();
+    EditServlet servlet = new EditServlet();
     
     context.checking(new Expectations(){{
       oneOf(request).getParameter("id");
