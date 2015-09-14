@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <listener>
+        <listener-class>application.Setup</listener-class>
+    </listener>
+    <context-param>
+        <param-name>USERNAME</param-name>
+        <param-value>aka</param-value>
+    </context-param>
+    <context-param>
+        <param-name>PASSWORD</param-name>
+        <param-value>aka</param-value>
+    </context-param>
+    <context-param>
+        <param-name>DRIVER</param-name>
+        <param-value>oracle.jdbc.driver.OracleDriver</param-value>
+    </context-param>
+    <context-param>
+        <param-name>DB-URL</param-name>
+        <param-value>jdbc:oracle:thin:@datdb.cphbusiness.dk:1521:DAT</param-value>
+    </context-param>
+</web-app>

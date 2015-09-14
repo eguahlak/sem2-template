@@ -1,0 +1,7 @@
+application
+application.boundary.console
+application.boundary.web
+application.control
+application.control.simple
+application.entity
+application.entity.database
